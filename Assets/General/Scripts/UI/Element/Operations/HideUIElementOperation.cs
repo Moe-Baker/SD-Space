@@ -27,7 +27,7 @@ namespace Game
 
         protected virtual void Reset()
         {
-            target = GetComponentInParent<UIElement>();
+            target = Dependency.Find<UIElement>(gameObject, Dependency.Direction.Up);
         }
 
         public virtual void Execute()

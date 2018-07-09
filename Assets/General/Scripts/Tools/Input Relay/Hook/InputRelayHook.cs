@@ -20,7 +20,7 @@ using Random = UnityEngine.Random;
 namespace Game
 {
     [RequireComponent(typeof(InputRelay))]
-	public class InputRelayHook : MonoBehaviour
+	public abstract class InputRelayHook : MonoBehaviour
 	{
         protected virtual void Start()
         {
