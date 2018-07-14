@@ -40,6 +40,7 @@ namespace Game
             }
         }
         public event ValueChangeDelegate OnValueChange;
+        public virtual bool Empty { get { return value == 0f; } }
 
         [SerializeField]
         protected float max;
@@ -61,6 +62,7 @@ namespace Game
             }
         }
         public event ValueChangeDelegate OnMaxChange;
+        public virtual bool Full { get { return value == max; } }
 
         public float Rate { get { return value / max; } }
 
